@@ -27,7 +27,7 @@ async def echo(message: types.Message):
         await bot.send_message(message.from_user.id, 'Здесь должно быть расписание')
     elif message.text == '📜 Посты с группы Computer-Center':
         vk_init.get_wall_posts()
-        await bot.send_message(message.from_user.id, vk_init.get_wall_posts())
+        await bot.send_message(message.from_user.id, "В разработке")
     elif message.text == '📍 Местоположение зданий университета':
         await bot.send_message(message.from_user.id, "Выберите нужное вам здание:", reply_markup=nav.buildingMenu)
     elif message.text == "Первое":
