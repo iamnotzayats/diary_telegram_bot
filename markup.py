@@ -19,6 +19,6 @@ btnFifth = KeyboardButton("Пятое")
 btnSixth = KeyboardButton("Шестое")
 btnSeventh = KeyboardButton("Седьмое")
 btnEighth = KeyboardButton("Восьмое")
-btnAgain = KeyboardButton("Назад")
+btnAgain = KeyboardButton("Главное меню")
 
 buildingMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnFirst, btnSecond, btnThird, btnFourth, btnFifth, btnSixth, btnSeventh, btnEighth, btnAgain)
