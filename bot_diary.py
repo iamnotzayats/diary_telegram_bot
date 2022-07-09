@@ -29,7 +29,10 @@ async def echo(message: types.Message):
         vk_init.get_wall_posts()
         await bot.send_message(message.from_user.id, vk_init.get_wall_posts())
     elif message.text == '📍 Местоположение зданий университета':
-        await bot.send_message(message.from_user.id, 'Здесь должны быть здания универа')
+        #await bot.send_message(message.from_user.id, "Первое здание КАИ📍\n"
+                                                     #"Адрес: Карла Маркса, 10")
+        #await bot.send_location(message.from_user.id, 55.797054, 49.114090)
+        await bot.send_message(message.from_user.id, "Выберите нужное вам здание:", reply_markup=nav.buildingMenu)
 
 
 if __name__ == '__main__':

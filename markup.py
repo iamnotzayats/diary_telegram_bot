@@ -10,3 +10,15 @@ btnGeo = KeyboardButton('📍 Местоположение зданий унив
 mainMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnTimetable, btnPosts, btnGeo)
 
 # ------------------- Получение постов VK ---------------------
+
+btnFirst = KeyboardButton("Первое")
+btnSecond = KeyboardButton("Второе")
+btnThird = KeyboardButton("Третье")
+btnFourth = KeyboardButton("Четвертое")
+btnFifth = KeyboardButton("Пятое")
+btnSixth = KeyboardButton("Шестое")
+btnSeventh = KeyboardButton("Седьмое")
+btnEighth = KeyboardButton("Восьмое")
+btnAgain = KeyboardButton("Назад")
+
+buildingMenu = ReplyKeyboardMarkup(resize_keyboard = True).add(btnFirst, btnSecond, btnThird, btnFourth, btnFifth, btnSixth, btnSeventh, btnEighth, btnAgain)
