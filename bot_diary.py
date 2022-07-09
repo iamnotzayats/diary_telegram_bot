@@ -19,6 +19,15 @@ async def send_welcome(message: types.Message):
                         f"📜 Посты с группы Computer-Center\n"
                         f"📍 Местоположение зданий университета", reply_markup=nav.mainMenu)
 
+@dp.message_handler()
+async def echo(message: types.Message):
+    if(message.text == '📆 Расписание'):
+        await bot.send_message(message.from_user.id, 'Здесь должно быть расписание')
+    elif message.text == '📜 Посты с группы Computer-Center':
+        await bot.send_message(message.from_user.id, 'Здесь должны быть посты')
+    elif message.text == '📍 Местоположение зданий университета':
+        await bot.send_message(message.from_user.id, 'Здесь должны быть здания универа')
+
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
