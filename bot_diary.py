@@ -24,7 +24,7 @@ async def send_welcome(message: types.Message):
 @dp.message_handler()
 async def echo(message: types.Message):
     if(message.text == '📆 Расписание'):
-        await bot.send_message(message.from_user.id, 'Здесь должно быть расписание')
+        await bot.send_message(message.from_user.id, 'Какой курс?', reply_markup=nav.courseMenu)
     elif message.text == '📜 Посты с группы Computer-Center':
         vk_init.get_wall_posts()
         await bot.send_message(message.from_user.id, "В разработке")
